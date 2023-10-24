@@ -22,35 +22,35 @@ submitButton.addEventListener("click", function (e) {
 
     if (!fname.match(acceptedNames)) {
         e.preventDefault();
-        firstName.style.border = "2px solid hsl(0, 100%, 74%)";
+        firstName.style.border = "2px solid var(--accent)";
         addError(errorIcons, 0, errorMsgs, 0);
 
     } else if (fname.match(acceptedNames) && !lname.match(acceptedNames)) {
-        firstName.style.border = "1px solid hsl(246, 52%, 88%)";
+        firstName.style.border = "1px solid var(--border)";
         removeError(errorIcons, 0, errorMsgs, 0);
 
         e.preventDefault();
-        lastName.style.border = "2px solid hsl(0, 100%, 74%)";
+        lastName.style.border = "2px solid var(--accent)";
         addError(errorIcons, 1, errorMsgs, 1);
 
     } else if (lname.match(acceptedNames) && !email.match(acceptedEmail)) {
-        lastName.style.border = "1px solid hsl(246, 52%, 88%)";
+        lastName.style.border = "1px solid var(--border)";
         removeError(errorIcons, 1, errorMsgs, 1);
 
         e.preventDefault();
-        emailAddress.style.border = "2px solid hsl(0, 100%, 74%)";
+        emailAddress.style.border = "2px solid var(--accent)";
         addError(errorIcons, 2, errorMsgs, 2);
 
     } else if (email.match(acceptedEmail) && pword.length === 0) {
-        emailAddress.style.border = "1px solid hsl(246, 52%, 88%)";
+        emailAddress.style.border = "1px solid var(--border)";
         removeError(errorIcons, 2, errorMsgs, 2);
 
         e.preventDefault();
-        password.style.border = "2px solid hsl(0, 100%, 74%)";
+        password.style.border = "2px solid var(--accent)";
         addError(errorIcons, 3, errorMsgs, 3);
 
     } else {
-        password.style.border = "1px solid hsl(246, 52%, 88%)";
+        password.style.border = "1px solid var(--border)";
 
         errorIcons.forEach(() => this.classList.add("hidden"));
         errorMsgs.forEach(() => this.classList.add("hidden"));
