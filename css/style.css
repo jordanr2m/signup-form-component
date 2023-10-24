@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.75rem;
+}
+
+.content-wrapper {
+    max-width: 375px;
+    padding: 1.25rem;
+}
+
+.text-wrapper {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+h1 {
+    line-height: 2.4rem;
+    font-size: 1.8rem;
+}
+
+#free-trial {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 1rem 3.75rem;
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    text-shadow: 1px 1px 2px hsla(249, 10%, 37%, 0.423);
+    border-radius: 0.6rem;
+    box-shadow: 0 7px  hsla(250, 10%, 37%, 0.27);
+    margin-bottom: 1.5rem;
+}
+
+#free-trial:hover {
+    cursor: pointer;
+}
+
+
+/* ======== FORM STYLES ========*/
+form {
+    position: relative;
+    background-color: white;
+    border-radius: 0.6rem;
+    padding: 1.5rem;
+    box-shadow: 0 7px  hsla(248, 10%, 44%, 0.27);
+    margin-bottom: 2.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid hsl(246, 52%, 88%);
+}
+
+form input:active,
+form input:focus {
+    outline: 1px solid hsl(250, 15%, 67%);
+}
+
+::placeholder {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/*== Icon Styles & Hidden Text ==*/
+.error-icon {
+    position: absolute;
+    right: 42px;
+    /* z-index: 5; */
+}
+
+.icon1 {
+    top: 38px;
+}
+
+.icon2 {
+    top: 108px;
+}
+
+.icon3 {
+    top: 176px;
+}
+
+.icon4 {
+    top: 245px; 
+}
+
+.error-message {
+    color: hsl(0, 100%, 74%);
+    font-size: .7rem;
+    margin-top: -0.9rem;
+    padding: 0.1rem 0 1rem 0;
+    text-align: right;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type=submit] {
+    text-transform: uppercase;
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    box-shadow: 0 3px  hsl(154, 59%, 44%);
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    font-size: 0.9rem;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+form p {
+    color: hsl(246, 25%, 77%);
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0 1rem;
+    line-height: 1.3rem;
+    margin: 0;
+}
+
+.hl {
+    font-weight: bold;
+    color: hsl(0, 100%, 74%);
+}
+
+/* Attribution styles */
+.attribution {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.attribution a {
+    color: hsl(248, 32%, 49%);
+}
