@@ -56,6 +56,7 @@ submitButton.addEventListener("click", function (e) {
         errorMsgs.forEach(() => this.classList.add("hidden"));
     }
 });
+// Could change functionality so that all blanks fields show an alert at once. Do this by using seperate if else statements for each item, rather combining them into one if else statement //
 
 
 //// Functions to Add & Remove Errors /////
