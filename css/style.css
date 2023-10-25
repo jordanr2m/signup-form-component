@@ -9,11 +9,11 @@
 
 html,
 body {
-    height: 100vh;
     font-size: 16px;
 }
 
 body {
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
     background-image: url(../images/bg-intro-mobile.png);
     background-color: var(--accent);
@@ -27,7 +27,7 @@ body {
 .content-wrapper {
     max-width: 375px;
     padding: 1.25rem;
-    height: 100%; /* Must set height to 100% so that content shows up properly on mobile devices. DO NOT use justify-content:center; or else text will get cut off. */
+    height: 100%; /* Must set height to 100% so that content shows up properly on mobile devices. DO NOT use justify-content:center; or else text will get cut off. For more, visit: https://stackoverflow.com/questions/27612931/styling-html-and-body-selector-to-height-100-vs-using-100vh */
     display: flex;
     flex-direction: column;
 }
