@@ -172,6 +172,7 @@ form p {
 
     .content-wrapper {
         max-width: 1200px;
+        padding: 2.5rem;
         justify-content: center;
         align-items: center;
     }
