@@ -48,7 +48,7 @@ h1 {
     color: white;
     text-shadow: 1px 1px 2px hsla(249, 10%, 37%, 0.423);
     border-radius: 0.6rem;
-    box-shadow: 0 7px  hsla(250, 10%, 37%, 0.27);
+    box-shadow: 0 7px hsla(250, 10%, 37%, 0.27);
     margin-bottom: 1.5rem;
 }
 
@@ -63,7 +63,7 @@ form {
     background-color: white;
     border-radius: 0.6rem;
     padding: 1.5rem;
-    box-shadow: 0 7px  hsla(248, 10%, 44%, 0.27);
+    box-shadow: 0 7px hsla(248, 10%, 44%, 0.27);
     margin-bottom: 2.5rem;
 }
 
@@ -89,7 +89,6 @@ form input:focus {
 .error-icon {
     position: absolute;
     right: 42px;
-    /* z-index: 5; */
 }
 
 .icon1 {
@@ -105,7 +104,7 @@ form input:focus {
 }
 
 .icon4 {
-    top: 245px; 
+    top: 245px;
 }
 
 .error-message {
@@ -159,4 +158,71 @@ form p {
 
 .attribution a {
     color: hsl(248, 32%, 49%);
+}
+
+
+/** Media Queries for Desktop and Tablet **/
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../images/bg-intro-desktop.png);
+    }
+
+    .content-wrapper {
+        max-width: 1200px;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-wrapper {
+        margin-right: 2.75rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    h1,
+    .text-wrapper p {
+        text-align: left;
+    }
+
+    #free-trial {
+        width: 100%;
+    }
+
+    form {
+        padding: 2.5rem 2.5rem 3rem 2.5rem;
+        margin-bottom: 2.75rem;
+        width: 550px; /* Set a width for desktop so width of form doesn't change when js is activated */
+    }
+
+    /*== Icon Styles Desktop ==*/
+    .error-icon {
+        right: 56px;
+    }
+
+    .icon1 {
+        top: 56px;
+    }
+
+    .icon2 {
+        top: 124px;
+    }
+
+    .icon3 {
+        top: 192px;
+    }
+
+    .icon4 {
+        top: 260px;
+    }
 }
