@@ -27,11 +27,13 @@ body {
 .content-wrapper {
     max-width: 375px;
     padding: 1.25rem;
+    min-height: 100%;
+    overflow: scroll;
 }
 
 .text-wrapper {
     text-align: center;
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 h1 {
@@ -154,6 +156,7 @@ form p {
     font-size: 0.8rem;
     text-align: center;
     margin-bottom: 0;
+    width: 90%;
 }
 
 .attribution a {
@@ -169,6 +172,8 @@ form p {
 
     .content-wrapper {
         max-width: 1200px;
+        justify-content: center;
+        align-items: center;
     }
 
     main {
@@ -224,5 +229,9 @@ form p {
 
     .icon4 {
         top: 260px;
+    }
+
+    .attribution {
+        width: 100%;
     }
 }
