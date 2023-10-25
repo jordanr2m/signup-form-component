@@ -27,8 +27,7 @@ body {
 .content-wrapper {
     max-width: 375px;
     padding: 1.25rem;
-    min-height: 100%;
-    overflow: scroll;
+    height: 100%;
 }
 
 .text-wrapper {
